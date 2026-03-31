@@ -1,0 +1,14 @@
+{
+  "next_invoice_number": 49539,
+  "gst_rate": 1,
+  "company_name": "Tayyebi Dawakhana (Pvt) Ltd.",
+  "company_address": "11 B-4, Commercial Area, Nazimabad No. 2, Karachi Pakistan.",
+  "company_phone": "021-36600703-4, 36603036, 36602189",
+  "company_ntn": "0659124-7",
+  "company_gst": "11-00-3000-001-37",
+  "company_web": "www.tayyebi.com.pk",
+  "default_type": "Commercial Invoice",
+  "default_payment_terms": "Cash on Delivery",
+  "default_stock_from": "/HO/",
+  "theme": "light"
+}
