@@ -45,14 +45,48 @@ This starts Vite (React) and Electron simultaneously.
 
 ---
 
-## Build standalone Windows .exe installer
+## Build standalone Windows .exe installer (local only)
 
 ```bash
 npm run build
 ```
 
 Output is in `dist-app/`.  
-The installer is: `dist-app/Tayyebi Invoicing Setup 1.0.0.exe`
+The installer is: `dist-app/Tayyebi Invoicing Setup X.X.X.exe`
+
+---
+
+## Publishing Updates
+
+Users get auto-updates via GitHub Releases. Follow these steps:
+
+### One-time setup: Set GitHub Token
+
+1. Go to https://github.com/settings/tokens?type=beta
+2. Create a **fine-grained token** scoped to `ShahjahanMirza/tayyebi-invoice-generator`
+3. Permission: **Contents → Read and write**
+4. Copy the token and run this in PowerShell (replace `YOUR_TOKEN_HERE`):
+
+```powershell
+[System.Environment]::SetEnvironmentVariable("GH_TOKEN", "YOUR_TOKEN_HERE", "User")
+```
+
+Close and reopen your terminal after this. Only needed once (or when you rotate the token).
+
+### Every time you release an update
+
+1. Make your code changes
+2. Bump `version` in `package.json` (e.g. `1.1.0` → `1.2.0`)
+3. Run:
+
+```bash
+npm run dist
+```
+
+That's it. The installer gets built and uploaded to GitHub Releases automatically.  
+Users will see an "Update Ready" prompt next time they open the app.
+
+> **Note:** Version must increase or the updater won't trigger. Use `X.Y.0` for features, `X.Y.Z` for bug fixes.
 
 Hand this installer to the client. They run it once, it installs to Program Files,
 creates a desktop shortcut, and that's it. No Python, no Node, no terminal needed.
