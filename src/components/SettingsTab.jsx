@@ -23,9 +23,15 @@ export default function SettingsTab({ settings, onSaved, isOnline }) {
   const [form, setForm]       = useState({ ...settings })
   const [saved, setSaved]     = useState(false)
   const [version, setVersion] = useState('')
+  const [updateInfo, setUpdateInfo] = useState(null)
 
   useEffect(() => { setForm({ ...settings }) }, [settings])
-  useEffect(() => { window.api.getVersion().then(v => setVersion(v)) }, [])
+  useEffect(() => { 
+    window.api.getVersion().then(v => setVersion(v))
+    window.api.onUpdateStatus((data) => {
+      setUpdateInfo(data)
+    })
+  }, [])
 
   async function handleSave() {
     const payload = { ...form }
@@ -128,7 +134,44 @@ export default function SettingsTab({ settings, onSaved, isOnline }) {
         Your data is fully synchronized with the <strong>Tayyebi Supabase Cloud</strong>. 
         Local data files are maintained for temporary caching and offline recovery.
       </p>
-      {version && <p className="muted" style={{ marginBottom:12, fontSize:12 }}>Version <strong>{version}</strong></p>}
+      
+      <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom:15 }}>
+        {version && <span className="muted" style={{ fontSize:12 }}>Version <strong>{version}</strong></span>}
+        <button 
+          className="btn btn-secondary btn-sm" 
+          onClick={() => window.api.checkForUpdate()}
+          style={{ padding: '4px 10px', fontSize: '12px' }}
+        >
+          Check for Updates
+        </button>
+      </div>
+
+      {updateInfo && (
+        <div style={{ 
+          background: 'var(--bg-card)', 
+          border: '1px solid var(--border-color)', 
+          padding: '12px', 
+          borderRadius: '6px',
+          marginBottom: '15px'
+        }}>
+          <div style={{ fontSize: '13px', fontWeight: '500', marginBottom: updateInfo.percent ? '8px' : '0' }}>
+            {updateInfo.text}
+          </div>
+          {updateInfo.percent !== null && (
+            <div style={{ width: '100%', background: 'var(--border-color)', height: '6px', borderRadius: '3px', overflow: 'hidden' }}>
+              <div 
+                style={{ 
+                  height: '100%', 
+                  background: 'var(--primary-color)', 
+                  width: `${updateInfo.percent}%`,
+                  transition: 'width 0.2s'
+                }} 
+              />
+            </div>
+          )}
+        </div>
+      )}
+
       <button className="btn btn-secondary btn-sm" onClick={() => window.api.openDataFolder()}>
         📁 Open Resource Folder
       </button>

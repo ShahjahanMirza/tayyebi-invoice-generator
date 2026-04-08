@@ -68,29 +68,36 @@ async function checkOnline() {
   }
 }
 
+function sendStatusToWindow(text, percent = null) {
+  console.log(`[Updater] ${text}`)
+  if (win && win.webContents) {
+    win.webContents.send('update-status', { text, percent })
+  }
+}
+
 // ── Auto-Updater (production only) ─────────────────────────────────────────
 function setupAutoUpdater() {
   autoUpdater.autoDownload = true
   autoUpdater.autoInstallOnAppQuit = true
 
   autoUpdater.on('checking-for-update', () => {
-    console.log('[Updater] Checking for updates…')
+    sendStatusToWindow('Checking for updates...')
   })
 
   autoUpdater.on('update-available', (info) => {
-    console.log(`[Updater] Update available: v${info.version}`)
+    sendStatusToWindow(`Update v${info.version} available! Downloading...`)
   })
 
   autoUpdater.on('update-not-available', () => {
-    console.log('[Updater] App is up to date.')
+    sendStatusToWindow('App is up to date.')
   })
 
   autoUpdater.on('download-progress', (progress) => {
-    console.log(`[Updater] Downloading: ${Math.round(progress.percent)}%`)
+    sendStatusToWindow(`Downloading update...`, progress.percent)
   })
 
   autoUpdater.on('update-downloaded', (info) => {
-    console.log(`[Updater] Update downloaded: v${info.version}`)
+    sendStatusToWindow(`Update v${info.version} downloaded! Ready to install.`, 100)
     dialog.showMessageBox(win, {
       type: 'info',
       title: 'Update Ready',
@@ -104,11 +111,18 @@ function setupAutoUpdater() {
   })
 
   autoUpdater.on('error', (err) => {
+    sendStatusToWindow('Error in auto-updater. Check logs.')
     console.error('[Updater] Error:', err.message)
   })
 
   autoUpdater.checkForUpdatesAndNotify()
 }
+
+ipcMain.handle('check-for-update', () => {
+  if (isPackaged) {
+    autoUpdater.checkForUpdatesAndNotify()
+  }
+})
 
 // ── Window Management ───────────────────────────────────────────────────────
 let win
@@ -512,4 +526,5 @@ ipcMain.handle('get-theme', async () => {
 })
 
 ipcMain.handle('open-invoices-folder', () => shell.openPath(PDF_DIR))
+ipcMain.handle('open-data-folder', () => shell.openPath(DATA_DIR))
 ipcMain.handle('get-version', () => app.getVersion())
