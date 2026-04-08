@@ -1,6 +1,6 @@
 const { app, BrowserWindow, ipcMain, shell, nativeTheme, dialog } = require('electron')
 const path = require('path')
-const fs   = require('fs')
+const fs = require('fs')
 const { createClient } = require('@supabase/supabase-js')
 const { autoUpdater } = require('electron-updater')
 
@@ -26,7 +26,7 @@ if (isPackaged) {
   const SEED_FILES = ['products.json', 'customers.json', 'settings.json', 'history.json']
   for (const file of SEED_FILES) {
     const dest = path.join(DATA_DIR, file)
-    const src  = path.join(SEED_DIR, file)
+    const src = path.join(SEED_DIR, file)
     if (!fs.existsSync(dest) && fs.existsSync(src)) {
       try {
         fs.copyFileSync(src, dest)
@@ -267,15 +267,15 @@ ipcMain.handle('get-settings', async () => {
   const defaults = {
     next_invoice_number: 1,
     gst_rate: 1.0,
-    company_name:    'Tayyebi Dawakhana (Pvt) Ltd.',
+    company_name: 'Tayyebi Dawakhana (Pvt) Ltd.',
     company_address: '11 B-4, Commercial Area, Nazimabad No. 2, Karachi Pakistan.',
-    company_phone:   '021-36600703-4, 36603036, 36602189',
-    company_ntn:     '0659124-7',
-    company_gst:     '11-00-3000-001-37',
-    company_web:     'www.tayyebi.com.pk',
-    default_type:          'Commercial Invoice',
+    company_phone: '021-36600703-4, 36603036, 36602189',
+    company_ntn: '0659124-7',
+    company_gst: '11-00-3000-001-37',
+    company_web: 'www.tayyebi.com.pk',
+    default_type: 'Commercial Invoice',
     default_payment_terms: 'Cash on Delivery',
-    default_stock_from:    '/HO/',
+    default_stock_from: '/HO/',
     retail_to_trade_discount: 15,
     gst_rate: 1.0,
     admin_user: 'admin',
@@ -294,8 +294,8 @@ ipcMain.handle('get-settings', async () => {
     // Reconcile invoice counter: if local counter is ahead (offline invoices were created),
     // push it up to Supabase so we don't hand out the same number again
     const localCache = readLocalJSON('settings.json')
-    const localNextNum  = parseInt(localCache?.next_invoice_number ?? 0)
-    const cloudNextNum  = parseInt(cloudSettings.next_invoice_number ?? 0)
+    const localNextNum = parseInt(localCache?.next_invoice_number ?? 0)
+    const cloudNextNum = parseInt(cloudSettings.next_invoice_number ?? 0)
     if (localNextNum > cloudNextNum) {
       await supabase.from('app_settings').upsert({ key: 'next_invoice_number', value: localNextNum })
       cloudSettings.next_invoice_number = localNextNum
@@ -469,8 +469,9 @@ ipcMain.handle('generate-pdf', async (_, { invoiceData, settings }) => {
   const { generateInvoicePDF } = require('./pdfGenerator')
   const ts = new Date().getTime().toString().slice(-4)
   const safeCustomer = invoiceData.customer_name.replace(/[^a-z0-9]/gi, '_')
-  const originalPath  = path.join(PDF_DIR, `Invoice_${invoiceData.invoice_number}_${safeCustomer}_${ts}.pdf`)
-  const duplicatePath = path.join(PDF_DIR, `Invoice_${invoiceData.invoice_number}_${safeCustomer}_${ts}_DUP.pdf`)
+  const originalPath = path.join(PDF_DIR, `Invoice_${invoiceData.invoice_number}_${safeCustomer}_${ts}.pdf`)
+  const duplicatePath = path.join(PDF_DIR, `Invoice_${invoiceData.invoice_number}_${safeCustomer}_${ts}_DUPLICATE.pdf`)
+  const triplicatePath = path.join(PDF_DIR, `Invoice_${invoiceData.invoice_number}_${safeCustomer}_${ts}_TRIPLICATE.pdf`)
 
   try {
     // Generate Original
@@ -478,12 +479,15 @@ ipcMain.handle('generate-pdf', async (_, { invoiceData, settings }) => {
 
     // Generate Duplicate (local only)
     await generateInvoicePDF(invoiceData, settings, duplicatePath, 'Duplicate')
-    
+
+    // Generate Triplicate (local only)
+    await generateInvoicePDF(invoiceData, settings, triplicatePath, 'Triplicate')
+
     // Cloud Backup (Original only)
     try {
       const fileBuffer = fs.readFileSync(originalPath)
       const cloudPath = `INV_${invoiceData.invoice_number}_${safeCustomer}.pdf`
-      
+
       const { error: uploadErr } = await supabase.storage
         .from('invoices')
         .upload(cloudPath, fileBuffer, {
@@ -504,6 +508,7 @@ ipcMain.handle('generate-pdf', async (_, { invoiceData, settings }) => {
 
     shell.openPath(originalPath)
     shell.openPath(duplicatePath)
+    shell.openPath(triplicatePath)
     return { success: true, filePath: originalPath }
   } catch (e) {
     console.error('PDF error:', e)

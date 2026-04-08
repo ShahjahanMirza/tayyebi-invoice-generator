@@ -1,6 +1,6 @@
 {
   "name": "tayyebi-invoicing",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Tayyebi Dawakhana Invoicing System",
   "main": "main.js",
   "scripts": {
