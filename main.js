@@ -512,3 +512,4 @@ ipcMain.handle('get-theme', async () => {
 })
 
 ipcMain.handle('open-invoices-folder', () => shell.openPath(PDF_DIR))
+ipcMain.handle('get-version', () => app.getVersion())

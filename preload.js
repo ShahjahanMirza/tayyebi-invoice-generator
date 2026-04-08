@@ -12,6 +12,7 @@ contextBridge.exposeInMainWorld('api', {
   saveInvoice:    (data)   => ipcRenderer.invoke('save-invoice', data),
   generatePDF:    (payload)=> ipcRenderer.invoke('generate-pdf', payload),
   getTheme:       ()       => ipcRenderer.invoke('get-theme'),
+  getVersion:     ()       => ipcRenderer.invoke('get-version'),
   openDataFolder: ()       => ipcRenderer.invoke('open-data-folder'),
   openInvoicesFolder: ()   => ipcRenderer.invoke('open-invoices-folder'),
   onThemeChange:  (cb)     => ipcRenderer.on('theme-changed', (_, theme) => cb(theme)),

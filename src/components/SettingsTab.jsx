@@ -20,10 +20,12 @@ const FIELDS = [
 ]
 
 export default function SettingsTab({ settings, onSaved, isOnline }) {
-  const [form, setForm]   = useState({ ...settings })
-  const [saved, setSaved] = useState(false)
+  const [form, setForm]       = useState({ ...settings })
+  const [saved, setSaved]     = useState(false)
+  const [version, setVersion] = useState('')
 
   useEffect(() => { setForm({ ...settings }) }, [settings])
+  useEffect(() => { window.api.getVersion().then(v => setVersion(v)) }, [])
 
   async function handleSave() {
     const payload = { ...form }
@@ -126,6 +128,7 @@ export default function SettingsTab({ settings, onSaved, isOnline }) {
         Your data is fully synchronized with the <strong>Tayyebi Supabase Cloud</strong>. 
         Local data files are maintained for temporary caching and offline recovery.
       </p>
+      {version && <p className="muted" style={{ marginBottom:12, fontSize:12 }}>Version <strong>{version}</strong></p>}
       <button className="btn btn-secondary btn-sm" onClick={() => window.api.openDataFolder()}>
         📁 Open Resource Folder
       </button>
