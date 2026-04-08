@@ -1,7 +1,8 @@
-const { app, BrowserWindow, ipcMain, shell, nativeTheme } = require('electron')
+const { app, BrowserWindow, ipcMain, shell, nativeTheme, dialog } = require('electron')
 const path = require('path')
 const fs   = require('fs')
 const { createClient } = require('@supabase/supabase-js')
+const { autoUpdater } = require('electron-updater')
 
 // ── Supabase Configuration ──────────────────────────────────────────────────
 const SUPABASE_URL = 'https://etedxnlemuauwkxctcav.supabase.co'
@@ -67,6 +68,48 @@ async function checkOnline() {
   }
 }
 
+// ── Auto-Updater (production only) ─────────────────────────────────────────
+function setupAutoUpdater() {
+  autoUpdater.autoDownload = true
+  autoUpdater.autoInstallOnAppQuit = true
+
+  autoUpdater.on('checking-for-update', () => {
+    console.log('[Updater] Checking for updates…')
+  })
+
+  autoUpdater.on('update-available', (info) => {
+    console.log(`[Updater] Update available: v${info.version}`)
+  })
+
+  autoUpdater.on('update-not-available', () => {
+    console.log('[Updater] App is up to date.')
+  })
+
+  autoUpdater.on('download-progress', (progress) => {
+    console.log(`[Updater] Downloading: ${Math.round(progress.percent)}%`)
+  })
+
+  autoUpdater.on('update-downloaded', (info) => {
+    console.log(`[Updater] Update downloaded: v${info.version}`)
+    dialog.showMessageBox(win, {
+      type: 'info',
+      title: 'Update Ready',
+      message: `Version ${info.version} has been downloaded.`,
+      detail: 'The application will restart to install the update.',
+      buttons: ['Restart Now', 'Later'],
+      defaultId: 0,
+    }).then(({ response }) => {
+      if (response === 0) autoUpdater.quitAndInstall()
+    })
+  })
+
+  autoUpdater.on('error', (err) => {
+    console.error('[Updater] Error:', err.message)
+  })
+
+  autoUpdater.checkForUpdatesAndNotify()
+}
+
 // ── Window Management ───────────────────────────────────────────────────────
 let win
 
@@ -95,7 +138,10 @@ function createWindow() {
   win.setMenuBarVisibility(false)
 }
 
-app.whenReady().then(createWindow)
+app.whenReady().then(() => {
+  createWindow()
+  if (isPackaged) setupAutoUpdater()
+})
 app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit() })
 app.on('activate', () => { if (BrowserWindow.getAllWindows().length === 0) createWindow() })
 
