@@ -1,3 +1,5 @@
 /dist
 /dist-app
 /node_modules
+
+*.pdf

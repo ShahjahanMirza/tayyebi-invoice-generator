@@ -22,23 +22,50 @@ export default function App() {
   const [settings, setSettings] = useState({})
   const [theme, setTheme] = useState('light')
   const [loading, setLoading] = useState(true)
+  const [isOnline, setIsOnline] = useState(true)
 
   useEffect(() => {
     async function init() {
-      const [s, p, c, t] = await Promise.all([
+      const [s, p, c, t, online] = await Promise.all([
         window.api.getSettings(),
         window.api.getProducts(),
         window.api.getCustomers(),
         window.api.getTheme(),
+        window.api.checkOnline(),
       ])
       setSettings(s)
       setProducts(p)
       setCustomers(c)
       setTheme(t)
+      setIsOnline(online)
       setLoading(false)
     }
     init()
     window.api.onThemeChange(t => setTheme(t))
+
+    // Poll every 10s: connectivity + settings (invoice number)
+    // Every 3rd tick (30s): also refresh products and customers
+    let tickCount = 0
+    const interval = setInterval(async () => {
+      tickCount++
+      const online = await window.api.checkOnline()
+      setIsOnline(prev => {
+        if (online) {
+          const cameBackOnline = !prev && online
+          const refreshData = cameBackOnline || tickCount % 3 === 0
+          const promises = refreshData
+            ? [window.api.getSettings(), window.api.getProducts(), window.api.getCustomers()]
+            : [window.api.getSettings()]
+          Promise.all(promises).then(([s, p, c]) => {
+            setSettings(s)
+            if (refreshData) { setProducts(p); setCustomers(c) }
+          })
+        }
+        return online
+      })
+    }, 10000)
+
+    return () => clearInterval(interval)
   }, [])
 
   useEffect(() => {
@@ -46,11 +73,16 @@ export default function App() {
   }, [theme])
 
   async function handleLogin(u, p) {
-    if (u === 'admin' && p === 'admin') {
-      setUser({ username: 'admin', role: 'admin' })
+    const aU = settings.admin_user || 'admin'
+    const aP = settings.admin_pass || 'admin123'
+    const sU = settings.staff_user || 'staff'
+    const sP = settings.staff_pass || 'staff123'
+
+    if (u === aU && p === aP) {
+      setUser({ username: aU, role: 'admin' })
       setLoginError('')
-    } else if (u === 'user' && p === 'user') {
-      setUser({ username: 'user', role: 'user' })
+    } else if (u === sU && p === sP) {
+      setUser({ username: sU, role: 'user' })
       setTab('invoice')
       setLoginError('')
     } else {
@@ -85,6 +117,19 @@ export default function App() {
       {!user && <LoginModal onLogin={handleLogin} error={loginError} />}
       
       <div className="app-shell" style={!user ? { filter: 'blur(10px)', pointerEvents: 'none' } : {}}>
+        {!isOnline && (
+          <div style={{
+            background: '#f59e0b',
+            color: '#000',
+            textAlign: 'center',
+            padding: '6px 16px',
+            fontSize: 13,
+            fontWeight: 600,
+            letterSpacing: 0.3,
+          }}>
+            No internet connection — working offline. Invoices save locally. Product/customer editing is disabled.
+          </div>
+        )}
         <header className="app-header">
           <div className="header-logo">Tayyebi <span>Invoicing</span></div>
           <nav className="header-tabs">
@@ -121,20 +166,23 @@ export default function App() {
         </header>
 
         <main className="app-body">
-          {tab === 'invoice' && (
+          {/* InvoiceTab stays mounted always so in-progress invoice is never lost */}
+          <div style={{ display: tab === 'invoice' ? 'contents' : 'none', height: '100%' }}>
             <InvoiceTab
               products={products}
               customers={customers}
               settings={settings}
               onSaved={onInvoiceSaved}
+              isOnline={isOnline}
             />
-          )}
+          </div>
           {tab === 'products' && user?.role === 'admin' && (
             <DataEditorTab
               data={products}
               onSave={saveProducts}
               columns={prodCols}
               title="product"
+              isOnline={isOnline}
             />
           )}
           {tab === 'customers' && user?.role === 'admin' && (
@@ -143,10 +191,11 @@ export default function App() {
               onSave={saveCustomers}
               columns={custCols}
               title="customer"
+              isOnline={isOnline}
             />
           )}
           {tab === 'settings' && user?.role === 'admin' && (
-            <SettingsTab settings={settings} onSaved={onSettingsSaved} />
+            <SettingsTab settings={settings} onSaved={onSettingsSaved} isOnline={isOnline} />
           )}
         </main>
       </div>
@@ -154,13 +203,21 @@ export default function App() {
   )
 
   async function saveProducts(next) {
+    const result = await window.api.saveProducts(next)
+    if (result?.offline) {
+      alert('Cannot save products while offline. Please reconnect to the internet.')
+      return
+    }
     setProducts(next)
-    await window.api.saveProducts(next)
   }
 
   async function saveCustomers(next) {
+    const result = await window.api.saveCustomers(next)
+    if (result?.offline) {
+      alert('Cannot save customers while offline. Please reconnect to the internet.')
+      return
+    }
     setCustomers(next)
-    await window.api.saveCustomers(next)
   }
 
   async function onInvoiceSaved() {

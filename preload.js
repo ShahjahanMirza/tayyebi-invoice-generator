@@ -1,6 +1,7 @@
 const { contextBridge, ipcRenderer } = require('electron')
 
 contextBridge.exposeInMainWorld('api', {
+  checkOnline:    ()       => ipcRenderer.invoke('check-online'),
   getSettings:    ()       => ipcRenderer.invoke('get-settings'),
   saveSettings:   (data)   => ipcRenderer.invoke('save-settings', data),
   getProducts:    ()       => ipcRenderer.invoke('get-products'),

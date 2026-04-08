@@ -7,7 +7,11 @@ export default function SearchDropdown({ values = [], onSelect, placeholder = 'S
   const [hi, setHi]             = useState(-1)
   const wrapRef = useRef()
 
-  useEffect(() => { setQuery(value) }, [value])
+  const isInternal = useRef(false)
+  useEffect(() => { 
+    if (!isInternal.current) setQuery(value)
+    isInternal.current = false
+  }, [value])
 
   useEffect(() => {
     const handler = (e) => { if (!wrapRef.current?.contains(e.target)) setOpen(false) }

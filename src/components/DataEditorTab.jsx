@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react'
 
-export default function DataEditorTab({ data, onSave, columns, title }) {
+export default function DataEditorTab({ data, onSave, columns, title, isOnline }) {
   const emptyRow = useMemo(() => Object.fromEntries(columns.map(c => [c, ''])), [columns])
   const [form,    setForm]    = useState(emptyRow)
   const [selIdx,  setSelIdx]  = useState(-1)
@@ -8,6 +8,7 @@ export default function DataEditorTab({ data, onSave, columns, title }) {
   const [sortCol, setSortCol] = useState(columns[0])
   const [sortDir, setSortDir] = useState(1)
   const pk = useMemo(() => title === 'customer' ? 'TraderID' : 'Code', [title])
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     if (selIdx === -1) {
@@ -53,8 +54,13 @@ export default function DataEditorTab({ data, onSave, columns, title }) {
       return
     }
     const next = [...data, { ...form }]
-    await onSave(next)
-    clearForm(next)
+    setLoading(true)
+    try {
+      await onSave(next)
+      clearForm(next)
+    } finally {
+      setLoading(false)
+    }
   }
 
   async function updateRow() {
@@ -70,16 +76,26 @@ export default function DataEditorTab({ data, onSave, columns, title }) {
       return
     }
     const next = data.map((r, i) => i === selIdx ? { ...form } : r)
-    await onSave(next)
+    setLoading(true)
+    try {
+      await onSave(next)
+    } finally {
+      setLoading(false)
+    }
   }
 
   async function deleteRow() {
     if (selIdx < 0) return
     if (!confirm('Delete this row?')) return
     const next = data.filter((_, i) => i !== selIdx)
-    await onSave(next)
-    setSelIdx(-1)
-    setForm(emptyRow)
+    setLoading(true)
+    try {
+      await onSave(next)
+      setSelIdx(-1)
+      setForm(emptyRow)
+    } finally {
+      setLoading(false)
+    }
   }
 
   function clearForm(customData) {
@@ -107,10 +123,21 @@ export default function DataEditorTab({ data, onSave, columns, title }) {
           ))}
         </div>
         <div style={{ display:'flex', gap:8 }}>
-          <button className="btn btn-primary btn-sm" onClick={addRow}>+ Add New</button>
-          <button className="btn btn-secondary btn-sm" onClick={updateRow} disabled={selIdx < 0}>✎ Update Selected</button>
-          <button className="btn btn-danger btn-sm" onClick={deleteRow} disabled={selIdx < 0}>✕ Delete Selected</button>
-          <button className="btn btn-secondary btn-sm" onClick={() => clearForm()}>✕ Clear</button>
+          {!isOnline && (
+            <span style={{ fontSize: 12, color: '#f59e0b', fontWeight: 600, alignSelf: 'center', marginRight: 8 }}>
+              Editing disabled while offline
+            </span>
+          )}
+          <button className="btn btn-primary btn-sm" onClick={addRow} disabled={loading || !isOnline}>
+            {loading && selIdx === -1 ? '⏱ Adding...' : '+ Add New'}
+          </button>
+          <button className="btn btn-secondary btn-sm" onClick={updateRow} disabled={selIdx < 0 || loading || !isOnline}>
+            {loading && selIdx >= 0 ? '⏱ Updating...' : '✎ Update Selected'}
+          </button>
+          <button className="btn btn-danger btn-sm" onClick={deleteRow} disabled={selIdx < 0 || loading || !isOnline}>
+            {loading && selIdx >= 0 ? '⏱ Deleting...' : '✕ Delete Selected'}
+          </button>
+          <button className="btn btn-secondary btn-sm" onClick={() => clearForm()} disabled={loading}>✕ Clear</button>
           <div style={{ marginLeft:'auto', display:'flex', alignItems:'center', gap:8 }}>
             <input
               placeholder="Search…"

@@ -5,21 +5,6 @@
     "NEW PRICE": 3830
   },
   {
-    "Code": "6003",
-    "ITEM NAME": "Akseer Tims (20Tab)",
-    "NEW PRICE": 120
-  },
-  {
-    "Code": "6004",
-    "ITEM NAME": "Akseer Tims (500Tab)",
-    "NEW PRICE": 2700
-  },
-  {
-    "Code": "6005",
-    "ITEM NAME": "Aseer Tayyebi (20Tab)",
-    "NEW PRICE": 380
-  },
-  {
     "Code": "6006",
     "ITEM NAME": "Akseer Kabad (20Tab)",
     "NEW PRICE": 120
@@ -30,19 +15,29 @@
     "NEW PRICE": 2700
   },
   {
-    "Code": "6008",
-    "ITEM NAME": "Akseer Karam Shikam Har Qisam (100gm)",
-    "NEW PRICE": 270
-  },
-  {
     "Code": "6009",
     "ITEM NAME": "Akseer Karam Shikam Har Qisam (1 Kg Jar)",
     "NEW PRICE": 2430
   },
   {
-    "Code": "6010",
-    "ITEM NAME": "Akser Gurda (10gm)",
-    "NEW PRICE": 320
+    "Code": "6008",
+    "ITEM NAME": "Akseer Karam Shikam Har Qisam (100gm)",
+    "NEW PRICE": 270
+  },
+  {
+    "Code": "6001",
+    "ITEM NAME": "Akseer Not Bawaseer Kooni (20Tab)",
+    "NEW PRICE": 170
+  },
+  {
+    "Code": "6003",
+    "ITEM NAME": "Akseer Tims (20Tab)",
+    "NEW PRICE": 120
+  },
+  {
+    "Code": "6004",
+    "ITEM NAME": "Akseer Tims (500Tab)",
+    "NEW PRICE": 2700
   },
   {
     "Code": "6011",
@@ -55,14 +50,14 @@
     "NEW PRICE": 3830
   },
   {
-    "Code": "6013",
-    "ITEM NAME": "Anoshadro Sada (100gm)",
-    "NEW PRICE": 200
+    "Code": "6010",
+    "ITEM NAME": "Akser Gurda (10gm)",
+    "NEW PRICE": 320
   },
   {
-    "Code": "6014",
-    "ITEM NAME": "Anoshadro Sada (1 Kg Jar)",
-    "NEW PRICE": 1800
+    "Code": "6016",
+    "ITEM NAME": "Anoshadro Lolvi (1 kg)",
+    "NEW PRICE": 4680
   },
   {
     "Code": "6015",
@@ -70,9 +65,14 @@
     "NEW PRICE": 520
   },
   {
-    "Code": "6016",
-    "ITEM NAME": "Anoshadro Lolvi (1 kg)",
-    "NEW PRICE": 4680
+    "Code": "6014",
+    "ITEM NAME": "Anoshadro Sada (1 Kg Jar)",
+    "NEW PRICE": 1800
+  },
+  {
+    "Code": "6013",
+    "ITEM NAME": "Anoshadro Sada (100gm)",
+    "NEW PRICE": 200
   },
   {
     "Code": "6017",
@@ -165,14 +165,19 @@
     "NEW PRICE": 120
   },
   {
-    "Code": "6035",
-    "ITEM NAME": "Ayaraj Fakira (20gm)",
-    "NEW PRICE": 180
+    "Code": "6005",
+    "ITEM NAME": "Aseer Tayyebi (20Tab)",
+    "NEW PRICE": 380
   },
   {
     "Code": "6036",
     "ITEM NAME": "Ayaraj Fakira (1Kg Jar)",
     "NEW PRICE": 8100
+  },
+  {
+    "Code": "6035",
+    "ITEM NAME": "Ayaraj Fakira (20gm)",
+    "NEW PRICE": 180
   },
   {
     "Code": "6037",
@@ -198,21 +203,6 @@
     "Code": "6041",
     "ITEM NAME": "Chhinkni (2gm)",
     "NEW PRICE": 110
-  },
-  {
-    "Code": "6042",
-    "ITEM NAME": "Dawai Batissa (150gm)",
-    "NEW PRICE": 430
-  },
-  {
-    "Code": "6043",
-    "ITEM NAME": "Dawai Kali Khasi (20gm)",
-    "NEW PRICE": 170
-  },
-  {
-    "Code": "6044",
-    "ITEM NAME": "Dawai Potli Majloq (150gm)",
-    "NEW PRICE": 380
   },
   {
     "Code": "6045",
@@ -245,9 +235,9 @@
     "NEW PRICE": 3420
   },
   {
-    "Code": "6051",
-    "ITEM NAME": "Dawa-Ul-Misk Motadil Jawahir (50gm)",
-    "NEW PRICE": 520
+    "Code": "6054",
+    "ITEM NAME": "Dawa-Ul-Misk Motadil Jawahir (1 Kg Jar)",
+    "NEW PRICE": 8370
   },
   {
     "Code": "6052",
@@ -260,14 +250,9 @@
     "NEW PRICE": 2540
   },
   {
-    "Code": "6054",
-    "ITEM NAME": "Dawa-Ul-Misk Motadil Jawahir (1 Kg Jar)",
-    "NEW PRICE": 8370
-  },
-  {
-    "Code": "6055",
-    "ITEM NAME": "Dawa-Ul-Misk Motadil Sada (50gm)",
-    "NEW PRICE": 300
+    "Code": "6051",
+    "ITEM NAME": "Dawa-Ul-Misk Motadil Jawahir (50gm)",
+    "NEW PRICE": 520
   },
   {
     "Code": "6056",
@@ -278,6 +263,26 @@
     "Code": "6057",
     "ITEM NAME": "Dawa-Ul-Misk Motadil Sada (1Kg Jar)",
     "NEW PRICE": 4860
+  },
+  {
+    "Code": "6055",
+    "ITEM NAME": "Dawa-Ul-Misk Motadil Sada (50gm)",
+    "NEW PRICE": 300
+  },
+  {
+    "Code": "6042",
+    "ITEM NAME": "Dawai Batissa (150gm)",
+    "NEW PRICE": 430
+  },
+  {
+    "Code": "6043",
+    "ITEM NAME": "Dawai Kali Khasi (20gm)",
+    "NEW PRICE": 170
+  },
+  {
+    "Code": "6044",
+    "ITEM NAME": "Dawai Potli Majloq (150gm)",
+    "NEW PRICE": 380
   },
   {
     "Code": "6058",
@@ -700,14 +705,14 @@
     "NEW PRICE": 2925
   },
   {
-    "Code": "6142",
-    "ITEM NAME": "Habbe Sooranjan Blister (20Tab)",
-    "NEW PRICE": 170
-  },
-  {
     "Code": "6143",
     "ITEM NAME": "Habbe Sooranjan (500 Tab)",
     "NEW PRICE": 3830
+  },
+  {
+    "Code": "6142",
+    "ITEM NAME": "Habbe Sooranjan Blister (20Tab)",
+    "NEW PRICE": 170
   },
   {
     "Code": "6144",
@@ -760,14 +765,14 @@
     "NEW PRICE": 2925
   },
   {
-    "Code": "6154",
-    "ITEM NAME": "Habbe Tinkar Blister (40 Tab)",
-    "NEW PRICE": 170
-  },
-  {
     "Code": "6155",
     "ITEM NAME": "Habbe Tinkar (500 Tab)",
     "NEW PRICE": 1920
+  },
+  {
+    "Code": "6154",
+    "ITEM NAME": "Habbe Tinkar Blister (40 Tab)",
+    "NEW PRICE": 170
   },
   {
     "Code": "6156",
@@ -800,19 +805,14 @@
     "NEW PRICE": 7430
   },
   {
-    "Code": "6162",
-    "ITEM NAME": "Itriful Badiyan (100gm)",
-    "NEW PRICE": 170
-  },
-  {
     "Code": "6163",
     "ITEM NAME": "Itriful Badiyan (1 Kg jar)",
     "NEW PRICE": 1530
   },
   {
-    "Code": "6164",
-    "ITEM NAME": "Itriful Didan (100gm)",
-    "NEW PRICE": 200
+    "Code": "6162",
+    "ITEM NAME": "Itriful Badiyan (100gm)",
+    "NEW PRICE": 170
   },
   {
     "Code": "6165",
@@ -820,9 +820,9 @@
     "NEW PRICE": 1800
   },
   {
-    "Code": "6166",
-    "ITEM NAME": "Itriful Goodudi (100gm)",
-    "NEW PRICE": 300
+    "Code": "6164",
+    "ITEM NAME": "Itriful Didan (100gm)",
+    "NEW PRICE": 200
   },
   {
     "Code": "6167",
@@ -830,9 +830,9 @@
     "NEW PRICE": 2700
   },
   {
-    "Code": "6168",
-    "ITEM NAME": "Itriful Kabir (100gm)",
-    "NEW PRICE": 220
+    "Code": "6166",
+    "ITEM NAME": "Itriful Goodudi (100gm)",
+    "NEW PRICE": 300
   },
   {
     "Code": "6169",
@@ -840,9 +840,9 @@
     "NEW PRICE": 1990
   },
   {
-    "Code": "6170",
-    "ITEM NAME": "Itriful Kaseer-Ul-Munafa (100gm)",
-    "NEW PRICE": 200
+    "Code": "6168",
+    "ITEM NAME": "Itriful Kabir (100gm)",
+    "NEW PRICE": 220
   },
   {
     "Code": "6171",
@@ -850,14 +850,14 @@
     "NEW PRICE": 1800
   },
   {
+    "Code": "6170",
+    "ITEM NAME": "Itriful Kaseer-Ul-Munafa (100gm)",
+    "NEW PRICE": 200
+  },
+  {
     "Code": "6172",
     "ITEM NAME": "Itriful Kashnizi (100gm)",
     "NEW PRICE": 230
-  },
-  {
-    "Code": "6173",
-    "ITEM NAME": "Itriful Kashnizi (300gm)",
-    "NEW PRICE": 620
   },
   {
     "Code": "6174",
@@ -865,9 +865,9 @@
     "NEW PRICE": 2070
   },
   {
-    "Code": "6175",
-    "ITEM NAME": "Itriful Kishmish (100gm)",
-    "NEW PRICE": 170
+    "Code": "6173",
+    "ITEM NAME": "Itriful Kashnizi (300gm)",
+    "NEW PRICE": 620
   },
   {
     "Code": "6176",
@@ -875,14 +875,19 @@
     "NEW PRICE": 1530
   },
   {
-    "Code": "6177",
-    "ITEM NAME": "Itriful Mulliyan (100gm)",
-    "NEW PRICE": 360
+    "Code": "6175",
+    "ITEM NAME": "Itriful Kishmish (100gm)",
+    "NEW PRICE": 170
   },
   {
     "Code": "6178",
     "ITEM NAME": "Itriful Mulliyan (1 Kg Jar)",
     "NEW PRICE": 3240
+  },
+  {
+    "Code": "6177",
+    "ITEM NAME": "Itriful Mulliyan (100gm)",
+    "NEW PRICE": 360
   },
   {
     "Code": "6179",
@@ -895,13 +900,18 @@
     "NEW PRICE": 1530
   },
   {
+    "Code": "6182",
+    "ITEM NAME": "Itriful Mushil (1 Kg Jar)",
+    "NEW PRICE": 1600
+  },
+  {
     "Code": "6181",
     "ITEM NAME": "Itriful Mushil (100gm)",
     "NEW PRICE": 180
   },
   {
-    "Code": "6182",
-    "ITEM NAME": "Itriful Mushil (1 Kg Jar)",
+    "Code": "6184",
+    "ITEM NAME": "Itriful Sageer (1 Kg Jar)",
     "NEW PRICE": 1600
   },
   {
@@ -910,9 +920,9 @@
     "NEW PRICE": 180
   },
   {
-    "Code": "6184",
-    "ITEM NAME": "Itriful Sageer (1 Kg Jar)",
-    "NEW PRICE": 1600
+    "Code": "6187",
+    "ITEM NAME": "Itriful Shahatra (1 Kg Jar)",
+    "NEW PRICE": 1530
   },
   {
     "Code": "6185",
@@ -925,19 +935,9 @@
     "NEW PRICE": 460
   },
   {
-    "Code": "6187",
-    "ITEM NAME": "Itriful Shahatra (1 Kg Jar)",
-    "NEW PRICE": 1530
-  },
-  {
     "Code": "6188",
     "ITEM NAME": "Itriful Ustokhuddus (100gm)",
     "NEW PRICE": 260
-  },
-  {
-    "Code": "6189",
-    "ITEM NAME": "Itriful Ustokhuddus (300gm)",
-    "NEW PRICE": 700
   },
   {
     "Code": "6190",
@@ -945,19 +945,24 @@
     "NEW PRICE": 2340
   },
   {
+    "Code": "6189",
+    "ITEM NAME": "Itriful Ustokhuddus (300gm)",
+    "NEW PRICE": 700
+  },
+  {
     "Code": "6191",
     "ITEM NAME": "Itriful Zamani (100gm)",
     "NEW PRICE": 260
   },
   {
-    "Code": "6192",
-    "ITEM NAME": "Itriful Zamani (300gm)",
-    "NEW PRICE": 700
-  },
-  {
     "Code": "6193",
     "ITEM NAME": "Itriful Zamani (1Kg Jar)",
     "NEW PRICE": 2340
+  },
+  {
+    "Code": "6192",
+    "ITEM NAME": "Itriful Zamani (300gm)",
+    "NEW PRICE": 700
   },
   {
     "Code": "6194",
@@ -975,14 +980,14 @@
     "NEW PRICE": 170
   },
   {
-    "Code": "6197",
-    "ITEM NAME": "Jawarish Amla (300gm)",
-    "NEW PRICE": 460
-  },
-  {
     "Code": "6198",
     "ITEM NAME": "Jawarish Amla (1Kg Jar)",
     "NEW PRICE": 1530
+  },
+  {
+    "Code": "6197",
+    "ITEM NAME": "Jawarish Amla (300gm)",
+    "NEW PRICE": 460
   },
   {
     "Code": "6199",
@@ -1000,14 +1005,14 @@
     "NEW PRICE": 220
   },
   {
-    "Code": "6202",
-    "ITEM NAME": "Jawarish Anareen (300gm)",
-    "NEW PRICE": 595
-  },
-  {
     "Code": "6203",
     "ITEM NAME": "Jawarish Anareen (1Kg Jar)",
     "NEW PRICE": 1980
+  },
+  {
+    "Code": "6202",
+    "ITEM NAME": "Jawarish Anareen (300gm)",
+    "NEW PRICE": 595
   },
   {
     "Code": "6204",
@@ -1015,14 +1020,14 @@
     "NEW PRICE": 220
   },
   {
-    "Code": "6205",
-    "ITEM NAME": "Jawarish Bisbasa (300gm)",
-    "NEW PRICE": 595
-  },
-  {
     "Code": "6206",
     "ITEM NAME": "Jawarish Bisbasa (1Kg Jar)",
     "NEW PRICE": 1980
+  },
+  {
+    "Code": "6205",
+    "ITEM NAME": "Jawarish Bisbasa (300gm)",
+    "NEW PRICE": 595
   },
   {
     "Code": "6207",
@@ -1040,14 +1045,14 @@
     "NEW PRICE": 560
   },
   {
-    "Code": "6210",
-    "ITEM NAME": "Jawarish Jalinoos (300gm)",
-    "NEW PRICE": 1510
-  },
-  {
     "Code": "6211",
     "ITEM NAME": "Jawarish Jalinoos (1Kg Jar)",
     "NEW PRICE": 5040
+  },
+  {
+    "Code": "6210",
+    "ITEM NAME": "Jawarish Jalinoos (300gm)",
+    "NEW PRICE": 1510
   },
   {
     "Code": "6212",
@@ -1055,14 +1060,14 @@
     "NEW PRICE": 230
   },
   {
-    "Code": "6213",
-    "ITEM NAME": "Jawarish Kamooni (300gm)",
-    "NEW PRICE": 620
-  },
-  {
     "Code": "6214",
     "ITEM NAME": "Jawarish Kamooni (1Kg Jar)",
     "NEW PRICE": 2070
+  },
+  {
+    "Code": "6213",
+    "ITEM NAME": "Jawarish Kamooni (300gm)",
+    "NEW PRICE": 620
   },
   {
     "Code": "6215",
@@ -1105,14 +1110,9 @@
     "NEW PRICE": 2070
   },
   {
-    "Code": "6223",
-    "ITEM NAME": "Jawarish Moin-Ul-Hamal (100gm)",
-    "NEW PRICE": 300
-  },
-  {
-    "Code": "6224",
-    "ITEM NAME": "Jawarish Moin-Ul-Hamal (1 Kg Jar)",
-    "NEW PRICE": 2700
+    "Code": "6226",
+    "ITEM NAME": "Jawarish Mastagi (1 Kg Jar)",
+    "NEW PRICE": 3240
   },
   {
     "Code": "6225",
@@ -1120,14 +1120,14 @@
     "NEW PRICE": 360
   },
   {
-    "Code": "6226",
-    "ITEM NAME": "Jawarish Mastagi (1 Kg Jar)",
-    "NEW PRICE": 3240
+    "Code": "6224",
+    "ITEM NAME": "Jawarish Moin-Ul-Hamal (1 Kg Jar)",
+    "NEW PRICE": 2700
   },
   {
-    "Code": "6227",
-    "ITEM NAME": "Jawarish Safar Jali Mushil (100gm)",
-    "NEW PRICE": 170
+    "Code": "6223",
+    "ITEM NAME": "Jawarish Moin-Ul-Hamal (100gm)",
+    "NEW PRICE": 300
   },
   {
     "Code": "6228",
@@ -1135,9 +1135,9 @@
     "NEW PRICE": 1530
   },
   {
-    "Code": "6229",
-    "ITEM NAME": "Jawarish Safara Jali Kabiz (100gm)",
-    "NEW PRICE": 180
+    "Code": "6227",
+    "ITEM NAME": "Jawarish Safar Jali Mushil (100gm)",
+    "NEW PRICE": 170
   },
   {
     "Code": "6230",
@@ -1145,14 +1145,14 @@
     "NEW PRICE": 1620
   },
   {
+    "Code": "6229",
+    "ITEM NAME": "Jawarish Safara Jali Kabiz (100gm)",
+    "NEW PRICE": 180
+  },
+  {
     "Code": "6231",
     "ITEM NAME": "Jawarish Shahi (100gm)",
     "NEW PRICE": 330
-  },
-  {
-    "Code": "6232",
-    "ITEM NAME": "Jawarish Shahi (300gm)",
-    "NEW PRICE": 890
   },
   {
     "Code": "6233",
@@ -1160,9 +1160,9 @@
     "NEW PRICE": 2970
   },
   {
-    "Code": "6234",
-    "ITEM NAME": "Jawarish Shayaaran (100gm)",
-    "NEW PRICE": 180
+    "Code": "6232",
+    "ITEM NAME": "Jawarish Shahi (300gm)",
+    "NEW PRICE": 890
   },
   {
     "Code": "6235",
@@ -1170,9 +1170,9 @@
     "NEW PRICE": 1620
   },
   {
-    "Code": "6236",
-    "ITEM NAME": "Jawarish Sunb-Ul-Tibb (100gm)",
-    "NEW PRICE": 170
+    "Code": "6234",
+    "ITEM NAME": "Jawarish Shayaaran (100gm)",
+    "NEW PRICE": 180
   },
   {
     "Code": "6237",
@@ -1180,9 +1180,9 @@
     "NEW PRICE": 1530
   },
   {
-    "Code": "6238",
-    "ITEM NAME": "Jawarish Tabasheer (100gm)",
-    "NEW PRICE": 220
+    "Code": "6236",
+    "ITEM NAME": "Jawarish Sunb-Ul-Tibb (100gm)",
+    "NEW PRICE": 170
   },
   {
     "Code": "6239",
@@ -1190,9 +1190,9 @@
     "NEW PRICE": 1980
   },
   {
-    "Code": "6240",
-    "ITEM NAME": "Jawarish Tamarhindi (100gm)",
-    "NEW PRICE": 260
+    "Code": "6238",
+    "ITEM NAME": "Jawarish Tabasheer (100gm)",
+    "NEW PRICE": 220
   },
   {
     "Code": "6241",
@@ -1200,9 +1200,9 @@
     "NEW PRICE": 2340
   },
   {
-    "Code": "6242",
-    "ITEM NAME": "Jawarish Udd Mulliyan (100gm)",
-    "NEW PRICE": 170
+    "Code": "6240",
+    "ITEM NAME": "Jawarish Tamarhindi (100gm)",
+    "NEW PRICE": 260
   },
   {
     "Code": "6243",
@@ -1210,9 +1210,9 @@
     "NEW PRICE": 1530
   },
   {
-    "Code": "6244",
-    "ITEM NAME": "Jawarish Udd Shareen (100gm)",
-    "NEW PRICE": 300
+    "Code": "6242",
+    "ITEM NAME": "Jawarish Udd Mulliyan (100gm)",
+    "NEW PRICE": 170
   },
   {
     "Code": "6245",
@@ -1220,9 +1220,9 @@
     "NEW PRICE": 2700
   },
   {
-    "Code": "6246",
-    "ITEM NAME": "Jawarish Udd Tursh (100gm)",
-    "NEW PRICE": 230
+    "Code": "6244",
+    "ITEM NAME": "Jawarish Udd Shareen (100gm)",
+    "NEW PRICE": 300
   },
   {
     "Code": "6247",
@@ -1230,9 +1230,9 @@
     "NEW PRICE": 2070
   },
   {
-    "Code": "6248",
-    "ITEM NAME": "Jawarish Zanjibil (100gm)",
-    "NEW PRICE": 180
+    "Code": "6246",
+    "ITEM NAME": "Jawarish Udd Tursh (100gm)",
+    "NEW PRICE": 230
   },
   {
     "Code": "6249",
@@ -1240,9 +1240,9 @@
     "NEW PRICE": 1620
   },
   {
-    "Code": "6250",
-    "ITEM NAME": "Jawarish Zarooni Ambari (100gm)",
-    "NEW PRICE": 440
+    "Code": "6248",
+    "ITEM NAME": "Jawarish Zanjibil (100gm)",
+    "NEW PRICE": 180
   },
   {
     "Code": "6251",
@@ -1250,9 +1250,9 @@
     "NEW PRICE": 3960
   },
   {
-    "Code": "6252",
-    "ITEM NAME": "Jawarish Zarooni Sada (100gm)",
-    "NEW PRICE": 330
+    "Code": "6250",
+    "ITEM NAME": "Jawarish Zarooni Ambari (100gm)",
+    "NEW PRICE": 440
   },
   {
     "Code": "6253",
@@ -1260,19 +1260,19 @@
     "NEW PRICE": 2970
   },
   {
+    "Code": "6252",
+    "ITEM NAME": "Jawarish Zarooni Sada (100gm)",
+    "NEW PRICE": 330
+  },
+  {
     "Code": "6254",
     "ITEM NAME": "Jersol (150gm)",
     "NEW PRICE": 700
   },
   {
-    "Code": "6255",
-    "ITEM NAME": "Kamal Small (24gm)",
-    "NEW PRICE": 650
-  },
-  {
-    "Code": "6256",
-    "ITEM NAME": "Kamal Large (48gm)",
-    "NEW PRICE": 1120
+    "Code": "6259",
+    "ITEM NAME": "Kamad Majlooq (150gm)",
+    "NEW PRICE": 320
   },
   {
     "Code": "6257",
@@ -1280,14 +1280,19 @@
     "NEW PRICE": 3000
   },
   {
+    "Code": "6256",
+    "ITEM NAME": "Kamal Large (48gm)",
+    "NEW PRICE": 1120
+  },
+  {
     "Code": "6258",
     "ITEM NAME": "Kamal Rubium (12Days)",
     "NEW PRICE": 1120
   },
   {
-    "Code": "6259",
-    "ITEM NAME": "Kamad Majlooq (150gm)",
-    "NEW PRICE": 320
+    "Code": "6255",
+    "ITEM NAME": "Kamal Small (24gm)",
+    "NEW PRICE": 650
   },
   {
     "Code": "6260",
@@ -1300,19 +1305,9 @@
     "NEW PRICE": 210
   },
   {
-    "Code": "6262",
-    "ITEM NAME": "Khamira Abrasham Arshad Wala (50gm)",
-    "NEW PRICE": 570
-  },
-  {
     "Code": "6263",
     "ITEM NAME": "Khamira Abrasham Arshad Wala (100gm)",
     "NEW PRICE": 1040
-  },
-  {
-    "Code": "6264",
-    "ITEM NAME": "Khamira Abrasham Arshad Wala (300gm)",
-    "NEW PRICE": 2810
   },
   {
     "Code": "6265",
@@ -1320,9 +1315,14 @@
     "NEW PRICE": 9360
   },
   {
-    "Code": "6266",
-    "ITEM NAME": "Khamira Abrasham Sada (100gm)",
-    "NEW PRICE": 220
+    "Code": "6264",
+    "ITEM NAME": "Khamira Abrasham Arshad Wala (300gm)",
+    "NEW PRICE": 2810
+  },
+  {
+    "Code": "6262",
+    "ITEM NAME": "Khamira Abrasham Arshad Wala (50gm)",
+    "NEW PRICE": 570
   },
   {
     "Code": "6267",
@@ -1330,9 +1330,9 @@
     "NEW PRICE": 1980
   },
   {
-    "Code": "6268",
-    "ITEM NAME": "Khamira Abrasham Shira Unnab Wala (100gm)",
-    "NEW PRICE": 480
+    "Code": "6266",
+    "ITEM NAME": "Khamira Abrasham Sada (100gm)",
+    "NEW PRICE": 220
   },
   {
     "Code": "6269",
@@ -1340,9 +1340,9 @@
     "NEW PRICE": 4320
   },
   {
-    "Code": "6270",
-    "ITEM NAME": "Khamira Banafshah (100gm)",
-    "NEW PRICE": 230
+    "Code": "6268",
+    "ITEM NAME": "Khamira Abrasham Shira Unnab Wala (100gm)",
+    "NEW PRICE": 480
   },
   {
     "Code": "6271",
@@ -1350,9 +1350,14 @@
     "NEW PRICE": 2070
   },
   {
-    "Code": "6272",
-    "ITEM NAME": "Khamira Gaozaban Amberi (50gm)",
-    "NEW PRICE": 330
+    "Code": "6270",
+    "ITEM NAME": "Khamira Banafshah (100gm)",
+    "NEW PRICE": 230
+  },
+  {
+    "Code": "6275",
+    "ITEM NAME": "Khamira Gaozaban Amberi (1 Kg Jar)",
+    "NEW PRICE": 5310
   },
   {
     "Code": "6273",
@@ -1365,14 +1370,9 @@
     "NEW PRICE": 1590
   },
   {
-    "Code": "6275",
-    "ITEM NAME": "Khamira Gaozaban Amberi (1 Kg Jar)",
-    "NEW PRICE": 5310
-  },
-  {
-    "Code": "6276",
-    "ITEM NAME": "Khamira Gaozaban Amberi Udd Salibwala (100gm)",
-    "NEW PRICE": 650
+    "Code": "6272",
+    "ITEM NAME": "Khamira Gaozaban Amberi (50gm)",
+    "NEW PRICE": 330
   },
   {
     "Code": "6277",
@@ -1380,9 +1380,9 @@
     "NEW PRICE": 5850
   },
   {
-    "Code": "6278",
-    "ITEM NAME": "Khamira Gaozban Amberi Jawahar Wala (50gm)",
-    "NEW PRICE": 420
+    "Code": "6276",
+    "ITEM NAME": "Khamira Gaozaban Amberi Udd Salibwala (100gm)",
+    "NEW PRICE": 650
   },
   {
     "Code": "6279",
@@ -1390,14 +1390,19 @@
     "NEW PRICE": 750
   },
   {
+    "Code": "6281",
+    "ITEM NAME": "Khamira Gaozban Amberi Jawahar Wala (1Kg Jar)",
+    "NEW PRICE": 6750
+  },
+  {
     "Code": "6280",
     "ITEM NAME": "Khamira Gaozban Amberi Jawahar Wala (300gm)",
     "NEW PRICE": 2030
   },
   {
-    "Code": "6281",
-    "ITEM NAME": "Khamira Gaozban Amberi Jawahar Wala (1Kg Jar)",
-    "NEW PRICE": 6750
+    "Code": "6278",
+    "ITEM NAME": "Khamira Gaozban Amberi Jawahar Wala (50gm)",
+    "NEW PRICE": 420
   },
   {
     "Code": "6282",
@@ -1405,19 +1410,14 @@
     "NEW PRICE": 260
   },
   {
-    "Code": "6283",
-    "ITEM NAME": "Khamira Gaozban Sada (300gm)",
-    "NEW PRICE": 700
-  },
-  {
     "Code": "6284",
     "ITEM NAME": "Khamira Gaozban Sada (1Kg Jar)",
     "NEW PRICE": 2340
   },
   {
-    "Code": "6285",
-    "ITEM NAME": "Khamira Khuskhash (100gm)",
-    "NEW PRICE": 230
+    "Code": "6283",
+    "ITEM NAME": "Khamira Gaozban Sada (300gm)",
+    "NEW PRICE": 700
   },
   {
     "Code": "6286",
@@ -1425,9 +1425,14 @@
     "NEW PRICE": 2070
   },
   {
-    "Code": "6287",
-    "ITEM NAME": "Khamira Marwarid (50gm)",
-    "NEW PRICE": 390
+    "Code": "6285",
+    "ITEM NAME": "Khamira Khuskhash (100gm)",
+    "NEW PRICE": 230
+  },
+  {
+    "Code": "6290",
+    "ITEM NAME": "Khamira Marwarid (1 Kg Jar)",
+    "NEW PRICE": 6300
   },
   {
     "Code": "6288",
@@ -1440,19 +1445,19 @@
     "NEW PRICE": 1890
   },
   {
-    "Code": "6290",
-    "ITEM NAME": "Khamira Marwarid (1 Kg Jar)",
-    "NEW PRICE": 6300
-  },
-  {
-    "Code": "6291",
-    "ITEM NAME": "Khamira Marwarid Amberi Wa Zafarani (100gm)",
-    "NEW PRICE": 1140
+    "Code": "6287",
+    "ITEM NAME": "Khamira Marwarid (50gm)",
+    "NEW PRICE": 390
   },
   {
     "Code": "6292",
     "ITEM NAME": "Khamira Marwarid Amberi Wa Zafarani (1 kg Jar)",
     "NEW PRICE": 10260
+  },
+  {
+    "Code": "6291",
+    "ITEM NAME": "Khamira Marwarid Amberi Wa Zafarani (100gm)",
+    "NEW PRICE": 1140
   },
   {
     "Code": "6293",
@@ -1465,19 +1470,14 @@
     "NEW PRICE": 5760
   },
   {
-    "Code": "6295",
-    "ITEM NAME": "Khamira Sundal Sada (100gm)",
-    "NEW PRICE": 220
-  },
-  {
     "Code": "6296",
     "ITEM NAME": "Khamira Sundal Sada (1 Kg Jar)",
     "NEW PRICE": 1980
   },
   {
-    "Code": "6297",
-    "ITEM NAME": "Khamira Zamrad (100gm)",
-    "NEW PRICE": 380
+    "Code": "6295",
+    "ITEM NAME": "Khamira Sundal Sada (100gm)",
+    "NEW PRICE": 220
   },
   {
     "Code": "6298",
@@ -1485,9 +1485,9 @@
     "NEW PRICE": 3420
   },
   {
-    "Code": "6299",
-    "ITEM NAME": "Khamira Zehar Mohra (100gm)",
-    "NEW PRICE": 330
+    "Code": "6297",
+    "ITEM NAME": "Khamira Zamrad (100gm)",
+    "NEW PRICE": 380
   },
   {
     "Code": "6300",
@@ -1495,9 +1495,19 @@
     "NEW PRICE": 2970
   },
   {
+    "Code": "6299",
+    "ITEM NAME": "Khamira Zehar Mohra (100gm)",
+    "NEW PRICE": 330
+  },
+  {
     "Code": "6301",
     "ITEM NAME": "Kharak (300gm)",
     "NEW PRICE": 1300
+  },
+  {
+    "Code": "6303",
+    "ITEM NAME": "Laooq Badam (1 Kg Jar)",
+    "NEW PRICE": 1800
   },
   {
     "Code": "6302",
@@ -1505,9 +1515,9 @@
     "NEW PRICE": 200
   },
   {
-    "Code": "6303",
-    "ITEM NAME": "Laooq Badam (1 Kg Jar)",
-    "NEW PRICE": 1800
+    "Code": "6306",
+    "ITEM NAME": "Laooq Khayarshamber (1 Kg Jar)",
+    "NEW PRICE": 1980
   },
   {
     "Code": "6304",
@@ -1520,9 +1530,9 @@
     "NEW PRICE": 595
   },
   {
-    "Code": "6306",
-    "ITEM NAME": "Laooq Khayarshamber (1 Kg Jar)",
-    "NEW PRICE": 1980
+    "Code": "6308",
+    "ITEM NAME": "Laooq Mutadil (1 Kg Jar)",
+    "NEW PRICE": 1620
   },
   {
     "Code": "6307",
@@ -1530,19 +1540,9 @@
     "NEW PRICE": 180
   },
   {
-    "Code": "6308",
-    "ITEM NAME": "Laooq Mutadil (1 Kg Jar)",
-    "NEW PRICE": 1620
-  },
-  {
     "Code": "6309",
     "ITEM NAME": "Laooq Sapistan (100gm)",
     "NEW PRICE": 220
-  },
-  {
-    "Code": "6310",
-    "ITEM NAME": "Laooq Sapistan (300gm)",
-    "NEW PRICE": 595
   },
   {
     "Code": "6311",
@@ -1550,9 +1550,9 @@
     "NEW PRICE": 1980
   },
   {
-    "Code": "6312",
-    "ITEM NAME": "Lubub Al Asrar (100gm)",
-    "NEW PRICE": 380
+    "Code": "6310",
+    "ITEM NAME": "Laooq Sapistan (300gm)",
+    "NEW PRICE": 595
   },
   {
     "Code": "6313",
@@ -1560,9 +1560,9 @@
     "NEW PRICE": 3420
   },
   {
-    "Code": "6314",
-    "ITEM NAME": "Lubub Barid (100 gm)",
-    "NEW PRICE": 490
+    "Code": "6312",
+    "ITEM NAME": "Lubub Al Asrar (100gm)",
+    "NEW PRICE": 380
   },
   {
     "Code": "6315",
@@ -1570,9 +1570,9 @@
     "NEW PRICE": 4410
   },
   {
-    "Code": "6316",
-    "ITEM NAME": "Lubub Kabir Qism-E-Ala (50gm)",
-    "NEW PRICE": 460
+    "Code": "6314",
+    "ITEM NAME": "Lubub Barid (100 gm)",
+    "NEW PRICE": 490
   },
   {
     "Code": "6317",
@@ -1580,19 +1580,19 @@
     "NEW PRICE": 750
   },
   {
-    "Code": "6318",
-    "ITEM NAME": "Lubub Kabir Qism-E-Ala (300gm)",
-    "NEW PRICE": 2050
-  },
-  {
     "Code": "6319",
     "ITEM NAME": "Lubub Kabir Qism-E-Ala (1Kg Jar)",
     "NEW PRICE": 6750
   },
   {
-    "Code": "6320",
-    "ITEM NAME": "Lubub Sagheer (100gm)",
-    "NEW PRICE": 300
+    "Code": "6318",
+    "ITEM NAME": "Lubub Kabir Qism-E-Ala (300gm)",
+    "NEW PRICE": 2050
+  },
+  {
+    "Code": "6316",
+    "ITEM NAME": "Lubub Kabir Qism-E-Ala (50gm)",
+    "NEW PRICE": 460
   },
   {
     "Code": "6321",
@@ -1600,9 +1600,9 @@
     "NEW PRICE": 2700
   },
   {
-    "Code": "6322",
-    "ITEM NAME": "Majoon Aksir ul Baden (100gm)",
-    "NEW PRICE": 200
+    "Code": "6320",
+    "ITEM NAME": "Lubub Sagheer (100gm)",
+    "NEW PRICE": 300
   },
   {
     "Code": "6323",
@@ -1610,14 +1610,14 @@
     "NEW PRICE": 1800
   },
   {
+    "Code": "6322",
+    "ITEM NAME": "Majoon Aksir ul Baden (100gm)",
+    "NEW PRICE": 200
+  },
+  {
     "Code": "6324",
     "ITEM NAME": "Majoon Arad-E-Khoorma (100gm)",
     "NEW PRICE": 230
-  },
-  {
-    "Code": "6325",
-    "ITEM NAME": "Majoon Arad-E-Khoorma (300gm)",
-    "NEW PRICE": 620
   },
   {
     "Code": "6326",
@@ -1625,9 +1625,9 @@
     "NEW PRICE": 2070
   },
   {
-    "Code": "6327",
-    "ITEM NAME": "Majoon Azraki (100gm)",
-    "NEW PRICE": 300
+    "Code": "6325",
+    "ITEM NAME": "Majoon Arad-E-Khoorma (300gm)",
+    "NEW PRICE": 620
   },
   {
     "Code": "6328",
@@ -1635,14 +1635,24 @@
     "NEW PRICE": 2700
   },
   {
-    "Code": "6329",
-    "ITEM NAME": "Majoon Chob Chini Khas (100gm)",
-    "NEW PRICE": 230
+    "Code": "6327",
+    "ITEM NAME": "Majoon Azraki (100gm)",
+    "NEW PRICE": 300
   },
   {
     "Code": "6330",
     "ITEM NAME": "Majoon Chob Chini Khas (1 Kg Jar)",
     "NEW PRICE": 2070
+  },
+  {
+    "Code": "6329",
+    "ITEM NAME": "Majoon Chob Chini Khas (100gm)",
+    "NEW PRICE": 230
+  },
+  {
+    "Code": "6333",
+    "ITEM NAME": "Majoon Dabidulward (1 Kg Jar)",
+    "NEW PRICE": 2700
   },
   {
     "Code": "6331",
@@ -1655,9 +1665,9 @@
     "NEW PRICE": 810
   },
   {
-    "Code": "6333",
-    "ITEM NAME": "Majoon Dabidulward (1 Kg Jar)",
-    "NEW PRICE": 2700
+    "Code": "6335",
+    "ITEM NAME": "Majoon Fakhri (1 Kg Jar)",
+    "NEW PRICE": 1800
   },
   {
     "Code": "6334",
@@ -1665,19 +1675,9 @@
     "NEW PRICE": 200
   },
   {
-    "Code": "6335",
-    "ITEM NAME": "Majoon Fakhri (1 Kg Jar)",
-    "NEW PRICE": 1800
-  },
-  {
     "Code": "6336",
     "ITEM NAME": "Majoon Falasfa (100gm)",
     "NEW PRICE": 290
-  },
-  {
-    "Code": "6337",
-    "ITEM NAME": "Majoon Falasfa (300gm)",
-    "NEW PRICE": 780
   },
   {
     "Code": "6338",
@@ -1685,9 +1685,9 @@
     "NEW PRICE": 2610
   },
   {
-    "Code": "6339",
-    "ITEM NAME": "Majoon Hamal Amberi Elwakhani (100gm)",
-    "NEW PRICE": 720
+    "Code": "6337",
+    "ITEM NAME": "Majoon Falasfa (300gm)",
+    "NEW PRICE": 780
   },
   {
     "Code": "6340",
@@ -1695,9 +1695,9 @@
     "NEW PRICE": 6480
   },
   {
-    "Code": "6341",
-    "ITEM NAME": "Majoon Hijer-Ul-Yahood (100gm)",
-    "NEW PRICE": 230
+    "Code": "6339",
+    "ITEM NAME": "Majoon Hamal Amberi Elwakhani (100gm)",
+    "NEW PRICE": 720
   },
   {
     "Code": "6342",
@@ -1705,9 +1705,9 @@
     "NEW PRICE": 2070
   },
   {
-    "Code": "6343",
-    "ITEM NAME": "Majoon Jalali (100 gm)",
-    "NEW PRICE": 650
+    "Code": "6341",
+    "ITEM NAME": "Majoon Hijer-Ul-Yahood (100gm)",
+    "NEW PRICE": 230
   },
   {
     "Code": "6344",
@@ -1715,8 +1715,8 @@
     "NEW PRICE": 5850
   },
   {
-    "Code": "6345",
-    "ITEM NAME": "Majoon Jalinoos Lolvi (100gm)",
+    "Code": "6343",
+    "ITEM NAME": "Majoon Jalali (100 gm)",
     "NEW PRICE": 650
   },
   {
@@ -1725,9 +1725,9 @@
     "NEW PRICE": 5850
   },
   {
-    "Code": "6347",
-    "ITEM NAME": "Majoon Jawaid (100gm)",
-    "NEW PRICE": 170
+    "Code": "6345",
+    "ITEM NAME": "Majoon Jalinoos Lolvi (100gm)",
+    "NEW PRICE": 650
   },
   {
     "Code": "6348",
@@ -1735,9 +1735,9 @@
     "NEW PRICE": 1530
   },
   {
-    "Code": "6349",
-    "ITEM NAME": "Majoon Kabz Kusha (100 gm)",
-    "NEW PRICE": 590
+    "Code": "6347",
+    "ITEM NAME": "Majoon Jawaid (100gm)",
+    "NEW PRICE": 170
   },
   {
     "Code": "6350",
@@ -1745,14 +1745,24 @@
     "NEW PRICE": 5310
   },
   {
-    "Code": "6351",
-    "ITEM NAME": "Majoon Khubsul Hadeed (100gm)",
-    "NEW PRICE": 200
+    "Code": "6349",
+    "ITEM NAME": "Majoon Kabz Kusha (100 gm)",
+    "NEW PRICE": 590
   },
   {
     "Code": "6352",
     "ITEM NAME": "Majoon Khubsul Hadeed (1 Kg Jar)",
     "NEW PRICE": 1800
+  },
+  {
+    "Code": "6351",
+    "ITEM NAME": "Majoon Khubsul Hadeed (100gm)",
+    "NEW PRICE": 200
+  },
+  {
+    "Code": "6355",
+    "ITEM NAME": "Majoon Kibriat Jawahardar (1 Kg)",
+    "NEW PRICE": 3420
   },
   {
     "Code": "6353",
@@ -1765,9 +1775,9 @@
     "NEW PRICE": 1030
   },
   {
-    "Code": "6355",
-    "ITEM NAME": "Majoon Kibriat Jawahardar (1 Kg)",
-    "NEW PRICE": 3420
+    "Code": "6357",
+    "ITEM NAME": "Majoon Kundar (1 Kg Jar)",
+    "NEW PRICE": 1980
   },
   {
     "Code": "6356",
@@ -1775,14 +1785,9 @@
     "NEW PRICE": 220
   },
   {
-    "Code": "6357",
-    "ITEM NAME": "Majoon Kundar (1 Kg Jar)",
-    "NEW PRICE": 1980
-  },
-  {
-    "Code": "6358",
-    "ITEM NAME": "Majoon Marul Arwha (20gm)",
-    "NEW PRICE": 350
+    "Code": "6360",
+    "ITEM NAME": "Majoon Marul Arwha (1 Kg Jar)",
+    "NEW PRICE": 14175
   },
   {
     "Code": "6359",
@@ -1790,9 +1795,9 @@
     "NEW PRICE": 1575
   },
   {
-    "Code": "6360",
-    "ITEM NAME": "Majoon Marul Arwha (1 Kg Jar)",
-    "NEW PRICE": 14175
+    "Code": "6358",
+    "ITEM NAME": "Majoon Marul Arwha (20gm)",
+    "NEW PRICE": 350
   },
   {
     "Code": "6361",
@@ -1805,19 +1810,14 @@
     "NEW PRICE": 3150
   },
   {
-    "Code": "6363",
-    "ITEM NAME": "Majoon Mocharas (100gm)",
-    "NEW PRICE": 200
-  },
-  {
     "Code": "6364",
     "ITEM NAME": "Majoon Mocharas (1 Kg Jar)",
     "NEW PRICE": 1800
   },
   {
-    "Code": "6365",
-    "ITEM NAME": "Majoon Mufrah-E-Azam (100gm)",
-    "NEW PRICE": 510
+    "Code": "6363",
+    "ITEM NAME": "Majoon Mocharas (100gm)",
+    "NEW PRICE": 200
   },
   {
     "Code": "6366",
@@ -1825,9 +1825,19 @@
     "NEW PRICE": 4590
   },
   {
+    "Code": "6365",
+    "ITEM NAME": "Majoon Mufrah-E-Azam (100gm)",
+    "NEW PRICE": 510
+  },
+  {
     "Code": "6367",
     "ITEM NAME": "Majoon Mughaliz Jawahardar (100gm)",
     "NEW PRICE": 650
+  },
+  {
+    "Code": "6369",
+    "ITEM NAME": "Majoon Mughaliz Jawahardar (1Kg Jar)",
+    "NEW PRICE": 5850
   },
   {
     "Code": "6368",
@@ -1835,9 +1845,9 @@
     "NEW PRICE": 1760
   },
   {
-    "Code": "6369",
-    "ITEM NAME": "Majoon Mughaliz Jawahardar (1Kg Jar)",
-    "NEW PRICE": 5850
+    "Code": "6372",
+    "ITEM NAME": "Majoon Munawwim Nuqrai (1 Kg)",
+    "NEW PRICE": 2700
   },
   {
     "Code": "6370",
@@ -1850,9 +1860,9 @@
     "NEW PRICE": 810
   },
   {
-    "Code": "6372",
-    "ITEM NAME": "Majoon Munawwim Nuqrai (1 Kg)",
-    "NEW PRICE": 2700
+    "Code": "6374",
+    "ITEM NAME": "Majoon Muqil (1 Kg Jar)",
+    "NEW PRICE": 1530
   },
   {
     "Code": "6373",
@@ -1860,23 +1870,13 @@
     "NEW PRICE": 170
   },
   {
-    "Code": "6374",
-    "ITEM NAME": "Majoon Muqil (1 Kg Jar)",
-    "NEW PRICE": 1530
-  },
-  {
-    "Code": "6375",
-    "ITEM NAME": "Majoon Najah (100gm)",
-    "NEW PRICE": 200
-  },
-  {
     "Code": "6376",
     "ITEM NAME": "Majoon Najah (1 Kg Jar)",
     "NEW PRICE": 1800
   },
   {
-    "Code": "6377",
-    "ITEM NAME": "Majoon Nan-Khawa (100gm)",
+    "Code": "6375",
+    "ITEM NAME": "Majoon Najah (100gm)",
     "NEW PRICE": 200
   },
   {
@@ -1885,14 +1885,24 @@
     "NEW PRICE": 1800
   },
   {
-    "Code": "6379",
-    "ITEM NAME": "Majoon Rubul Soos (100gm)",
+    "Code": "6377",
+    "ITEM NAME": "Majoon Nan-Khawa (100gm)",
     "NEW PRICE": 200
   },
   {
     "Code": "6380",
     "ITEM NAME": "Majoon Rubul Soos (1 Kg)",
     "NEW PRICE": 1800
+  },
+  {
+    "Code": "6379",
+    "ITEM NAME": "Majoon Rubul Soos (100gm)",
+    "NEW PRICE": 200
+  },
+  {
+    "Code": "6383",
+    "ITEM NAME": "Majoon Salab (1 Kg)",
+    "NEW PRICE": 3870
   },
   {
     "Code": "6381",
@@ -1905,19 +1915,14 @@
     "NEW PRICE": 1160
   },
   {
-    "Code": "6383",
-    "ITEM NAME": "Majoon Salab (1 Kg)",
-    "NEW PRICE": 3870
+    "Code": "6385",
+    "ITEM NAME": "Majoon Sangdana Murg (1 Kg Jar)",
+    "NEW PRICE": 1530
   },
   {
     "Code": "6384",
     "ITEM NAME": "Majoon Sangdana Murg (100gm)",
     "NEW PRICE": 170
-  },
-  {
-    "Code": "6385",
-    "ITEM NAME": "Majoon Sangdana Murg (1 Kg Jar)",
-    "NEW PRICE": 1530
   },
   {
     "Code": "6386",
@@ -1930,13 +1935,18 @@
     "NEW PRICE": 4050
   },
   {
+    "Code": "6389",
+    "ITEM NAME": "Majoon Sohag Sohont (1 Kg Jar)",
+    "NEW PRICE": 2700
+  },
+  {
     "Code": "6388",
     "ITEM NAME": "Majoon Sohag Sohont (100gm)",
     "NEW PRICE": 300
   },
   {
-    "Code": "6389",
-    "ITEM NAME": "Majoon Sohag Sohont (1 Kg Jar)",
+    "Code": "6392",
+    "ITEM NAME": "Majoon Sooranjan (1 Kg Jar)",
     "NEW PRICE": 2700
   },
   {
@@ -1950,8 +1960,8 @@
     "NEW PRICE": 810
   },
   {
-    "Code": "6392",
-    "ITEM NAME": "Majoon Sooranjan (1 Kg Jar)",
+    "Code": "6395",
+    "ITEM NAME": "Majoon Supari Pak (1 Kg Jar)",
     "NEW PRICE": 2700
   },
   {
@@ -1965,23 +1975,13 @@
     "NEW PRICE": 810
   },
   {
-    "Code": "6395",
-    "ITEM NAME": "Majoon Supari Pak (1 Kg Jar)",
-    "NEW PRICE": 2700
-  },
-  {
-    "Code": "6396",
-    "ITEM NAME": "Majoon Ushba (100gm)",
-    "NEW PRICE": 200
-  },
-  {
     "Code": "6397",
     "ITEM NAME": "Majoon Ushba (1 Kg Jar)",
     "NEW PRICE": 1800
   },
   {
-    "Code": "6398",
-    "ITEM NAME": "Majoon Ushba Sandali (100gm)",
+    "Code": "6396",
+    "ITEM NAME": "Majoon Ushba (100gm)",
     "NEW PRICE": 200
   },
   {
@@ -1990,14 +1990,19 @@
     "NEW PRICE": 1800
   },
   {
-    "Code": "6400",
-    "ITEM NAME": "Majoon Yograj Gogal (100gm)",
-    "NEW PRICE": 350
+    "Code": "6398",
+    "ITEM NAME": "Majoon Ushba Sandali (100gm)",
+    "NEW PRICE": 200
   },
   {
     "Code": "6401",
     "ITEM NAME": "Majoon Yograj Gogal (1 Kg Jar)",
     "NEW PRICE": 3150
+  },
+  {
+    "Code": "6400",
+    "ITEM NAME": "Majoon Yograj Gogal (100gm)",
+    "NEW PRICE": 350
   },
   {
     "Code": "6402",
@@ -2035,19 +2040,14 @@
     "NEW PRICE": 780
   },
   {
-    "Code": "6409",
-    "ITEM NAME": "Mufarah Barid Jawaher Wala (100gm)",
-    "NEW PRICE": 430
-  },
-  {
     "Code": "6410",
     "ITEM NAME": "Mufarah Barid Jawaher Wala (1 Kg Jar)",
     "NEW PRICE": 3870
   },
   {
-    "Code": "6411",
-    "ITEM NAME": "Mufarah Mutadil (100gm)",
-    "NEW PRICE": 480
+    "Code": "6409",
+    "ITEM NAME": "Mufarah Barid Jawaher Wala (100gm)",
+    "NEW PRICE": 430
   },
   {
     "Code": "6412",
@@ -2055,9 +2055,9 @@
     "NEW PRICE": 4120
   },
   {
-    "Code": "6413",
-    "ITEM NAME": "Mufarah Sh.Al Raees (100gm)",
-    "NEW PRICE": 490
+    "Code": "6411",
+    "ITEM NAME": "Mufarah Mutadil (100gm)",
+    "NEW PRICE": 480
   },
   {
     "Code": "6414",
@@ -2065,14 +2065,9 @@
     "NEW PRICE": 4410
   },
   {
-    "Code": "6415",
-    "ITEM NAME": "Mufarah Sosabzabi  (100gm)",
-    "NEW PRICE": 360
-  },
-  {
-    "Code": "6416",
-    "ITEM NAME": "Mufarah Sosabzabi  (1 Kg Jar)",
-    "NEW PRICE": 3240
+    "Code": "6413",
+    "ITEM NAME": "Mufarah Sh.Al Raees (100gm)",
+    "NEW PRICE": 490
   },
   {
     "Code": "6417",
@@ -2080,14 +2075,24 @@
     "NEW PRICE": 170
   },
   {
-    "Code": "6418",
-    "ITEM NAME": "Mulaziz Khas-Ul-Khas (3gm)",
-    "NEW PRICE": 230
+    "Code": "6416",
+    "ITEM NAME": "Mufarah Sosabzabi  (1 Kg Jar)",
+    "NEW PRICE": 3240
+  },
+  {
+    "Code": "6415",
+    "ITEM NAME": "Mufarah Sosabzabi  (100gm)",
+    "NEW PRICE": 360
   },
   {
     "Code": "6419",
     "ITEM NAME": "Mulaziz Khas-Ul-Khas (100gm)",
     "NEW PRICE": 6830
+  },
+  {
+    "Code": "6418",
+    "ITEM NAME": "Mulaziz Khas-Ul-Khas (3gm)",
+    "NEW PRICE": 230
   },
   {
     "Code": "6420",
@@ -2098,6 +2103,11 @@
     "Code": "6421",
     "ITEM NAME": "Nishat-E-Azam (10Tab)",
     "NEW PRICE": 1100
+  },
+  {
+    "Code": "6430",
+    "ITEM NAME": "Qayruti (20gm)",
+    "NEW PRICE": 170
   },
   {
     "Code": "6422",
@@ -2120,16 +2130,6 @@
     "NEW PRICE": 4500
   },
   {
-    "Code": "6426",
-    "ITEM NAME": "Qurs Podina (20Tab)",
-    "NEW PRICE": 130
-  },
-  {
-    "Code": "6427",
-    "ITEM NAME": "Qurs Podina (500 Tab)",
-    "NEW PRICE": 2930
-  },
-  {
     "Code": "6428",
     "ITEM NAME": "Qurs Mulliyan (20Tab)",
     "NEW PRICE": 200
@@ -2140,9 +2140,14 @@
     "NEW PRICE": 4500
   },
   {
-    "Code": "6430",
-    "ITEM NAME": "Qayruti (20gm)",
-    "NEW PRICE": 170
+    "Code": "6426",
+    "ITEM NAME": "Qurs Podina (20Tab)",
+    "NEW PRICE": 130
+  },
+  {
+    "Code": "6427",
+    "ITEM NAME": "Qurs Podina (500 Tab)",
+    "NEW PRICE": 2930
   },
   {
     "Code": "6431",
@@ -2285,16 +2290,6 @@
     "NEW PRICE": 500
   },
   {
-    "Code": "6459",
-    "ITEM NAME": "Sharbat Bizoori (240ml)",
-    "NEW PRICE": 210
-  },
-  {
-    "Code": "6460",
-    "ITEM NAME": "Sharbat Bizoori (800ml)",
-    "NEW PRICE": 500
-  },
-  {
     "Code": "6461",
     "ITEM NAME": "Sharbat Banafsha (240ml)",
     "NEW PRICE": 210
@@ -2305,6 +2300,16 @@
     "NEW PRICE": 500
   },
   {
+    "Code": "6459",
+    "ITEM NAME": "Sharbat Bizoori (240ml)",
+    "NEW PRICE": 210
+  },
+  {
+    "Code": "6460",
+    "ITEM NAME": "Sharbat Bizoori (800ml)",
+    "NEW PRICE": 500
+  },
+  {
     "Code": "6463",
     "ITEM NAME": "Sharbat Deenar (240ml)",
     "NEW PRICE": 210
@@ -2312,31 +2317,6 @@
   {
     "Code": "6464",
     "ITEM NAME": "Sharbat Deenar (800ml)",
-    "NEW PRICE": 500
-  },
-  {
-    "Code": "6465",
-    "ITEM NAME": "Sharbat Shehtoot (240ml)",
-    "NEW PRICE": 210
-  },
-  {
-    "Code": "6466",
-    "ITEM NAME": "Sharbat Shehtoot (800ml)",
-    "NEW PRICE": 500
-  },
-  {
-    "Code": "6467",
-    "ITEM NAME": "Sharbat Sandal (800ml)",
-    "NEW PRICE": 500
-  },
-  {
-    "Code": "6468",
-    "ITEM NAME": "Sharbat Unnab (240ml)",
-    "NEW PRICE": 210
-  },
-  {
-    "Code": "6469",
-    "ITEM NAME": "Sharbat Unnab (800ml)",
     "NEW PRICE": 500
   },
   {
@@ -2362,6 +2342,31 @@
   {
     "Code": "6474",
     "ITEM NAME": "Sharbat Nelofar (800ml)",
+    "NEW PRICE": 500
+  },
+  {
+    "Code": "6467",
+    "ITEM NAME": "Sharbat Sandal (800ml)",
+    "NEW PRICE": 500
+  },
+  {
+    "Code": "6465",
+    "ITEM NAME": "Sharbat Shehtoot (240ml)",
+    "NEW PRICE": 210
+  },
+  {
+    "Code": "6466",
+    "ITEM NAME": "Sharbat Shehtoot (800ml)",
+    "NEW PRICE": 500
+  },
+  {
+    "Code": "6468",
+    "ITEM NAME": "Sharbat Unnab (240ml)",
+    "NEW PRICE": 210
+  },
+  {
+    "Code": "6469",
+    "ITEM NAME": "Sharbat Unnab (800ml)",
     "NEW PRICE": 500
   },
   {
@@ -2465,14 +2470,14 @@
     "NEW PRICE": 200
   },
   {
-    "Code": "6495",
-    "ITEM NAME": "Surkh Oil (60ml)",
-    "NEW PRICE": 330
-  },
-  {
     "Code": "6496",
     "ITEM NAME": "Surkh Oil (120ml)",
     "NEW PRICE": 600
+  },
+  {
+    "Code": "6495",
+    "ITEM NAME": "Surkh Oil (60ml)",
+    "NEW PRICE": 330
   },
   {
     "Code": "6497",
@@ -2510,6 +2515,16 @@
     "NEW PRICE": 210
   },
   {
+    "Code": "6507",
+    "ITEM NAME": "Tiryakul Nazla (1 Kg Jar)",
+    "NEW PRICE": 1710
+  },
+  {
+    "Code": "6506",
+    "ITEM NAME": "Tiryakul Nazla (100gm)",
+    "NEW PRICE": 190
+  },
+  {
     "Code": "6504",
     "ITEM NAME": "Tiryakul Reham (20Tab)",
     "NEW PRICE": 150
@@ -2520,24 +2535,9 @@
     "NEW PRICE": 3380
   },
   {
-    "Code": "6506",
-    "ITEM NAME": "Tiryakul Nazla (100gm)",
-    "NEW PRICE": 190
-  },
-  {
-    "Code": "6507",
-    "ITEM NAME": "Tiryakul Nazla (1 Kg Jar)",
-    "NEW PRICE": 1710
-  },
-  {
     "Code": "6508",
     "ITEM NAME": "Yaqooti Ajeeb (10gm)",
     "NEW PRICE": 590
-  },
-  {
-    "Code": "6509",
-    "ITEM NAME": "Yaqooti Ajeeb (40gm)",
-    "NEW PRICE": 2020
   },
   {
     "Code": "6510",
@@ -2545,14 +2545,19 @@
     "NEW PRICE": 5300
   },
   {
-    "Code": "6511",
-    "ITEM NAME": "Yaqooti Mafruh Mutadil (20gm)",
-    "NEW PRICE": 330
+    "Code": "6509",
+    "ITEM NAME": "Yaqooti Ajeeb (40gm)",
+    "NEW PRICE": 2020
   },
   {
     "Code": "6512",
     "ITEM NAME": "Yaqooti Mafruh Mutadil (120gm)",
     "NEW PRICE": 1690
+  },
+  {
+    "Code": "6511",
+    "ITEM NAME": "Yaqooti Mafruh Mutadil (20gm)",
+    "NEW PRICE": 330
   },
   {
     "Code": "6513",
@@ -2593,10 +2598,5 @@
     "Code": "6520",
     "ITEM NAME": "Zimad Tanzoo (500Tab)",
     "NEW PRICE": 4500
-  },
-  {
-    "Code": "6001",
-    "ITEM NAME": "Akseer Bawaseer Kooni (20Tab)",
-    "NEW PRICE": 170
   }
 ]

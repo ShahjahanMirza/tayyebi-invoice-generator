@@ -12,10 +12,14 @@ const FIELDS = [
   { key:'default_type',        label:'Default Invoice Type',type:'text'   },
   { key:'default_payment_terms',label:'Default Payment Terms',type:'text' },
   { key:'default_stock_from',  label:'Default Stock From',  type:'text'   },
-  { key:'backup_path',         label:'Backup Folder Path',  type:'text'   },
+  { key:'retail_to_trade_discount', label:'Retail Discount % (Trade)', type:'number' },
+  { key:'admin_user',                label:'Admin Username',         type:'text'   },
+  { key:'admin_pass',                label:'Admin Password',         type:'password' },
+  { key:'staff_user',                label:'Staff Username',         type:'text'   },
+  { key:'staff_pass',                label:'Staff Password',         type:'password' },
 ]
 
-export default function SettingsTab({ settings, onSaved }) {
+export default function SettingsTab({ settings, onSaved, isOnline }) {
   const [form, setForm]   = useState({ ...settings })
   const [saved, setSaved] = useState(false)
 
@@ -56,8 +60,8 @@ export default function SettingsTab({ settings, onSaved }) {
         </div>
       </div>
 
-      <div style={{ display:'flex', gap:20, alignItems:'flex-start', marginBottom:24 }}>
-        <div className="card" style={{ flex:1 }}>
+      <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:20, alignItems:'flex-start', marginBottom:24 }}>
+        <div className="card">
           <div className="section-title">🏢 Company Info</div>
           {FIELDS.slice(2, 8).map(f => (
             <div key={f.key} style={{ marginBottom:12 }}>
@@ -71,9 +75,9 @@ export default function SettingsTab({ settings, onSaved }) {
           ))}
         </div>
 
-        <div className="card" style={{ flex:1 }}>
+        <div className="card">
           <div className="section-title">📄 Invoice Defaults</div>
-          {FIELDS.slice(0, 2).concat(FIELDS.slice(8)).map(f => (
+          {FIELDS.slice(0, 2).concat(FIELDS.slice(8, 12)).map(f => (
             <div key={f.key} style={{ marginBottom:12 }}>
               <label>{f.label}</label>
               <input
@@ -84,21 +88,46 @@ export default function SettingsTab({ settings, onSaved }) {
             </div>
           ))}
         </div>
+
+        <div className="card" style={{ gridColumn: '1 / -1' }}>
+          <div className="section-title">🔐 Security & Access Control</div>
+          <p className="muted" style={{ marginBottom: 15, fontSize: 13 }}>Configure the login credentials for your shop terminals. Changes sync across all workstations.</p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 24px' }}>
+            {FIELDS.slice(12).map(f => (
+              <div key={f.key} style={{ marginBottom:12 }}>
+                <label>{f.label}</label>
+                <input
+                  type={f.type}
+                  value={form[f.key] ?? ''}
+                  onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))}
+                  placeholder={`Set ${f.label.toLowerCase()}...`}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div style={{ display:'flex', alignItems:'center', gap:12 }}>
-        <button className="btn btn-primary" onClick={handleSave}>💾 Save Settings</button>
+        <button className="btn btn-primary" onClick={handleSave} disabled={!isOnline}>
+          💾 Save Settings
+        </button>
+        {!isOnline && (
+          <span style={{ fontSize: 12, color: '#f59e0b', fontWeight: 600 }}>
+            Settings cannot be saved while offline
+          </span>
+        )}
         {saved && <span className="badge badge-green">✓ Saved successfully</span>}
       </div>
 
-      <hr className="divider" />
-      <div className="section-title">Data Files</div>
+      <hr className="divider" style={{ margin: '30px 0' }} />
+      <div className="section-title">System Information</div>
       <p className="muted" style={{ marginBottom:12, fontSize:13, lineHeight:1.6 }}>
-        All data (customers, products, invoices, settings) is stored in your local AppData folder.
-        You can back this folder up or transfer it to another machine.
+        Your data is fully synchronized with the <strong>Tayyebi Supabase Cloud</strong>. 
+        Local data files are maintained for temporary caching and offline recovery.
       </p>
       <button className="btn btn-secondary btn-sm" onClick={() => window.api.openDataFolder()}>
-        📁 Open Data Folder
+        📁 Open Resource Folder
       </button>
     </div>
   )
